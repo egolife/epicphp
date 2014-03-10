@@ -1,0 +1,26 @@
+.wrap{
+	margin: 0 auto;
+	width: 600px;
+	background-color: hsla(113, 90, 50, 0.3);
+	text-align: center;
+	padding: 20px;
+}
+input[name="title"]{
+	width: 400px;
+	height: 2em;
+	margin-bottom: 1em;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+textarea[name="text"]{
+	width: 400px;
+	height: 200px;
+	margin-bottom: 1em;
+}
+input[name="submit"]{
+	width: 200px;
+	height: 2em;
+	font-size: 1.4em;
+	line-height: 3em;
+}

@@ -1,0 +1,127 @@
+@import "compass";
+$light: #fcfbfd;
+$semilight: #d9dde7;
+$medium: #cabed5;
+$semidark: #8181b3;
+$dark: #413448;
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+}
+body{
+	color: $dark;
+}
+header, footer{
+	height: 100px;
+	background-color: $medium;
+	text-align: center;
+	padding: 20px;
+	font-size: 3em;
+}
+h2{
+	text-align: center;
+	font-size: 1.3em;
+}
+nav{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	@include background(linear-gradient(to bottom, $semidark, $dark));
+	border-top: 2px solid $dark;
+	ul{
+		width: 960px;
+		margin: 0 auto;
+		border-left: 2px solid $dark;
+	}
+	li{
+		display: inline-block;
+		width: (100% / 8);
+		margin-right: -4px;
+		text-align: center;
+	}
+	a{
+		display: inline-block;
+		width: 100%;
+		color: $light;
+		font: 1.1em sans-serif;
+		line-height: 48px;
+		text-decoration: none;
+		border-right: 2px solid $dark;
+		&:hover{
+			//@include background(linear-gradient(to top, $semidark, $dark));
+			background-color: $dark;	
+		}
+		&:active{
+			color: $medium;
+		}
+	}
+	form{
+		position: absolute;
+		top: 10px;
+		left: 150px;
+	}
+	input[type="text"]{
+		width: 200px;
+		height: 25px;
+		text-align: center;
+	}
+}
+table{
+	margin: 0 auto;
+	border-collapse: collapse;
+	border: 1px solid $dark;
+	min-width: 600px; 
+}
+caption{
+	margin: 20px 0 10px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+td,th{
+	width: 80%;
+	padding: 10px;
+	border: 1px solid $dark;
+	&:first-child{
+		width: 20%;
+	}
+	span{
+		color: $semidark;
+	}
+}
+hr{border-top: 1px solid $dark;}
+.content{
+	padding: 20px;
+	height: 587px;
+	background-color: $light;
+	overflow: auto;
+}
+.active{
+	background-color: $dark;
+}
+.hidden{
+	display: none;
+}
+.task{
+	form{
+
+	}
+	input[type="text"]{
+		width: 200px;
+		height: 25px;
+		text-align: center;
+		background-color: $light;
+		border: 1px solid $dark;
+	}
+}
+.ev{
+	background-color: $medium;
+}
+footer{
+	@include box-sizing(border-box);
+	border-top: 2px solid $dark;
+	width: 100%;
+	//position: absolute;
+	//bottom: 0;
+}

@@ -1,0 +1,30 @@
+table{
+	border-collapse: collapse;
+	border: 1px solid #ccc;
+}
+td, tr{
+	width: 100px;
+	height: 40px;
+	padding-left: 10px;
+}
+tr:nth-child(even){
+	background-color: #e3e3f1;
+}
+tr :first-child{
+	font-style: italic;
+}
+td:nth-child(2){
+	color: #3379bc;
+	text-decoration: underline;
+}
+.exter{
+	background-color: #bbbbdd;
+	font-style: normal;
+	color: #3379bc;
+	text-decoration: none;
+}
+.exter :first-child{
+	color: #000;
+	text-decoration: none;
+	font-style: normal;
+}

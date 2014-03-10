@@ -1,0 +1,33 @@
+/* line 1, ../sass/blog.scss */
+.wrap {
+  margin: 0 auto;
+  width: 600px;
+  background-color: rgba(40, 242, 13, 0.3);
+  text-align: center;
+  padding: 20px;
+}
+
+/* line 8, ../sass/blog.scss */
+input[name="title"] {
+  width: 400px;
+  height: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* line 16, ../sass/blog.scss */
+textarea[name="text"] {
+  width: 400px;
+  height: 200px;
+  margin-bottom: 1em;
+}
+
+/* line 21, ../sass/blog.scss */
+input[name="submit"] {
+  width: 200px;
+  height: 2em;
+  font-size: 1.4em;
+  line-height: 3em;
+}
